@@ -34,6 +34,9 @@
       </list>
     </option>
   </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="nfan2aw2" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -47,7 +50,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/class/SpringBoot_TIL/aop",
+    "last_opened_file_path": "E:/class/SpringBoot_TIL/object_mapper",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
@@ -74,6 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1653655525655</updated>
       <workItem from="1653655526897" duration="2666000" />
+      <workItem from="1653744902642" duration="293000" />
     </task>
     <servers />
   </component>
