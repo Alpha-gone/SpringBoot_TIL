@@ -23,6 +23,9 @@
       </list>
     </option>
   </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="uq32h1ap" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -31,14 +34,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/class/SpringBoot_TIL/DI&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/class/SpringBoot_TIL/IOC"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -64,6 +67,9 @@
       <workItem from="1653396597324" duration="1348000" />
       <workItem from="1653398092857" duration="29000" />
       <workItem from="1653398144208" duration="63000" />
+      <workItem from="1654492641993" duration="12000" />
+      <workItem from="1654492697455" duration="19000" />
+      <workItem from="1654492773339" duration="1009000" />
     </task>
     <servers />
   </component>
