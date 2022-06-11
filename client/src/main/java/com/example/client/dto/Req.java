@@ -7,7 +7,13 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserRequest {
-    private String name;
-    private int age;
+public class Req<T> {
+    private Header header;
+    private T responseBody;
+
+    @Data
+    public static class Header{
+        private String responseCode;
+    }
+
 }
