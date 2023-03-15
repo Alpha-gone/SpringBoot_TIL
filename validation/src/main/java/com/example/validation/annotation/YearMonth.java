@@ -1,25 +1,23 @@
 package com.example.validation.annotation;
 
 import com.example.validation.validator.YearMonthValidator;
+import jakarta.validation.Constraint;
+import jakarta.validation.Payload;
 
-import javax.validation.Constraint;
-import javax.validation.Payload;
+import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import static java.lang.annotation.ElementType.*;
-import static java.lang.annotation.ElementType.TYPE_USE;
-import static java.lang.annotation.RetentionPolicy.RUNTIME;
-
 @Constraint(validatedBy = {YearMonthValidator.class})
-@Target({ METHOD, FIELD, ANNOTATION_TYPE, CONSTRUCTOR, PARAMETER, TYPE_USE })
-@Retention(RUNTIME)
+@Target(ElementType.FIELD)
+@Retention(RetentionPolicy.RUNTIME)
 public @interface YearMonth {
-    String message() default "yyyyMM의 형식에 맞지 않습니다.";
+    String message() default "날짜 양식에 맞지 않습니다. ex)yyyyMM";
+
+    String regexp() default "^\\d{4}(0[1-9]|1[012])$";
 
     Class<?>[] groups() default { };
 
     Class<? extends Payload>[] payload() default { };
-
-    String pattern() default "yyyyMMdd";
 }
