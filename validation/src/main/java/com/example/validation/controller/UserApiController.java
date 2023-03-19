@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserApiController {
     @PostMapping("")
     public Api<UserRegisterRequest> register(
+
             @Valid @RequestBody Api<UserRegisterRequest> request
     ){
         log.info("init : {}", request);

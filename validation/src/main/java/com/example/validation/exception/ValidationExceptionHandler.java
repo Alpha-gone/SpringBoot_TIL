@@ -17,7 +17,7 @@ public class ValidationExceptionHandler {
 
         var errorMessageList = exception.getFieldErrors()
                 .stream().map(error -> {
-                    var format = "%s : { %s} dms %s";
+                    var format = "%s : { %s} 은 %s";
                     var message = String.format(format, error.getField(),
                             error.getRejectedValue(), error.getDefaultMessage());
 
