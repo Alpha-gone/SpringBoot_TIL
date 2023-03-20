@@ -7,7 +7,7 @@ import java.util.*;
 public abstract class SimpleDataRepository<T extends Entity, ID extends Long> implements DataRepository<T, ID> {
     private List<T> dataList = new ArrayList<>();
     private static long index = 0;
-    private Comparator<T> sort = ((o1, o2) -> Long.compare(o1.getId(), o2.getId()));
+    private Comparator<T> sort = Comparator.comparingLong(Entity::getId);
 
     //C, U
     @Override
@@ -18,7 +18,7 @@ public abstract class SimpleDataRepository<T extends Entity, ID extends Long> im
 
         if (prevData.isPresent()){
             //기존 데이터 존재
-            dataList.remove(prevData);
+            dataList.remove(prevData.get());
             dataList.add(data);
         }else{
             //기존 데이터 미존재
@@ -26,7 +26,6 @@ public abstract class SimpleDataRepository<T extends Entity, ID extends Long> im
             data.setId(index++);
             dataList.add(data);
 
-            index++;
         }
 
         return data;
@@ -49,6 +48,6 @@ public abstract class SimpleDataRepository<T extends Entity, ID extends Long> im
     public void delete(ID id) {
         var deleteEntity = dataList.stream().filter(it -> it.getId().equals(id)).findFirst();
 
-        if (deleteEntity.isPresent()) dataList.remove(deleteEntity);
+        if (deleteEntity.isPresent()) dataList.remove(deleteEntity.get());
     }
 }
