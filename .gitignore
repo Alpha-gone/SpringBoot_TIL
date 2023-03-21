@@ -169,3 +169,5 @@ cmake-build-*/
 **/*.hprof
 **/HELP.md
 # End of https://www.toptal.com/developers/gitignore/api/windows,java,gradle,intellij+all
+
+/MySql
