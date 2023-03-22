@@ -1,4 +1,4 @@
-package com.example.memorydb.book.db.controller;
+package com.example.memorydb.book.controller;
 
 import com.example.memorydb.book.db.entity.BookEntity;
 import com.example.memorydb.book.db.service.BookService;
