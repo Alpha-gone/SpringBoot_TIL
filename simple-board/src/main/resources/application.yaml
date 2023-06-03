@@ -1,0 +1,13 @@
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      format_sql: true
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    url: jdbc:mysql://envy14:3306/simple_board?useSSL=false&useUnicode=true&allowPublicKeyRetrieval=true
+    username: root
+    password: root1234!
+  jooq:
+    sql-dialect: org.hibernate.dialect.MySQL8Dialect

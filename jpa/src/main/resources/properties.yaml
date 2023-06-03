@@ -1,0 +1,14 @@
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    url: jdbc:mysql://localhost:3306/book_store?userSSL=false&useUnicode=true&allowPublicKeyRetrieval=true
+    username: root
+    password: root1234!
+  jooq:
+    sql-dialect: org.hibernate.dialect.MySql8Dialect
